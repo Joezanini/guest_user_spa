@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 function App() {
   return (
@@ -11,6 +11,9 @@ function App() {
         <Route path="/users">
           <h1>Users</h1>
         </Route>
+        <Route path="/guests">
+          <h1>Guests</h1>
+        <Redirect to="/" />
       </Switch>
     </Router>
   );
