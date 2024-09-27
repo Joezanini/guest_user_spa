@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import Users from './user/pages/Users';
 
 function App() {
   return (
@@ -9,10 +10,11 @@ function App() {
           <h1>Home</h1>
         </Route>
         <Route path="/users">
-          <h1>Users</h1>
+          <Users />
         </Route>
         <Route path="/guests">
           <h1>Guests</h1>
+        </Route>
         <Redirect to="/" />
       </Switch>
     </Router>
