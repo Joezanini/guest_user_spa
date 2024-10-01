@@ -1,7 +1,5 @@
 import React from "react";
-import MeetingWidget
-
-from "../../shared/components/MeetingWidget";
+import MeetingWidget from "../../shared/components/MeetingWidget";
 
 const Meetings = () => {
     const MEETINGS = [
