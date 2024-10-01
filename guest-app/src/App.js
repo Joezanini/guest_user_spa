@@ -15,6 +15,9 @@ function App() {
         <Route path="/guests">
           <h1>Guests</h1>
         </Route>
+        <Route path="/meetings">
+          <h1>Meetings</h1>
+        </Route>
         <Redirect to="/" />
       </Switch>
     </Router>
